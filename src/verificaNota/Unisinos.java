@@ -96,13 +96,15 @@ public class Unisinos {
 		        AudioInputStream oStream = AudioSystem.getAudioInputStream(oUrl);
 		        oClip.open(oStream);		        
 		        oClip.loop(Clip.LOOP_CONTINUOUSLY);
+			} else { 
+				System.out.println("Segue sem nota...");
 			}
 
 	}
 		
 	private void aguardarJavaScript(WebClient webClient) {
-		webClient.waitForBackgroundJavaScript(10000);
-		webClient.waitForBackgroundJavaScriptStartingBefore(10000);
+		webClient.waitForBackgroundJavaScript(20000);
+		webClient.waitForBackgroundJavaScriptStartingBefore(20000);
 	}
 	
 }
